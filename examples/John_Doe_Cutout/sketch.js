@@ -5,7 +5,7 @@ function setup() {
   // Keep pixel math 1:1 with the canvas size (important for exports).
   pixelDensity(1);
   // Rebuild composition once per second.
-  frameRate(.6);
+  frameRate(1);
   // 8.5x11 inches at 150 dpi.
   createCanvas(8.5 * 150, 11 * 150);
 
@@ -77,8 +77,10 @@ function draw() {
   textGraphic.textFont("Helvetica");
   textGraphic.textAlign(CENTER, CENTER);
   textGraphic.textSize(20);
+  // Alternate text each redraw: John -> Doe -> John -> ...
+  const label = frameCount % 2 === 1 ? "John" : "Doe";
   // Place the text at the current mouse location.
-  textGraphic.text("JOHN DOE", mouseX, mouseY);
+  textGraphic.text(label, mouseX, mouseY);
 
   // Subtract text shape from each ink layer.
   red.cutout(textGraphic);
