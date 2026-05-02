@@ -18,6 +18,11 @@ Examples use **relative** paths to `lib/p5.riso.js`, so they work as a static si
    Start from the **Examples** index:  
    `https://eeconger.github.io/Tee-Shirt-Code/index.html`
 
+**Circle generator** (same Pages site):
+
+- `https://eeconger.github.io/Tee-Shirt-Code/circle_generator/clean_cirlces/index.html`
+- `https://eeconger.github.io/Tee-Shirt-Code/circle_generator/defined_circles/index.html`
+
 The repo includes **`.nojekyll`** so GitHub does not run Jekyll (avoids odd behavior with static HTML).
 
 ## Notes:
